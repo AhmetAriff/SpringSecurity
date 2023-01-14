@@ -31,6 +31,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
           return;
       }
       jwt = autHeader.substring(7);
-      userMail = jwtService.extreactUsername(jwt);
+      userMail = jwtService.extractUsername(jwt);
     }
 }
